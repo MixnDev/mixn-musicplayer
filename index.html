@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mixn Music Player</title>
+  <link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+<body>
+  <div class="player-container">
+    <h2 class="title">Mixn Music Player</h2>
+    <div class="cover">
+      <img id="cover" src="images/cover1.jpg" alt="cover">
+    </div>
+    <div id="song-title"><span>Another Love</span></div>
+    <div id="song-artist">Tom Odell</div>
+
+    <input type="range" id="progress" value="0">
+    <div class="time">
+      <span id="current-time">0:00</span>
+      <span id="duration">0:00</span>
+    </div>
+
+    <div class="controls">
+      <button id="prev"><i class="fas fa-backward"></i></button>
+      <button id="play"><i class="fas fa-play"></i></button>
+      <button id="next"><i class="fas fa-forward"></i></button>
+    </div>
+  </div>
+
+  <div class="playlist">
+    <h3>Playlist</h3>
+    <ul id="song-list"></ul>
+  </div>
+
+
+  <audio id="audio"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
